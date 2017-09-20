@@ -41,7 +41,7 @@ h5 {
   /*display: inline;*/
 }
 
-.icon-links {
+.icon-links a {
   margin-top: 50px;
   text-align: center;
   color: ghostwhite;
@@ -51,4 +51,5 @@ h5 {
 
 a:link {
   color: ghostwhite;
+  text-decoration: none;
 }
