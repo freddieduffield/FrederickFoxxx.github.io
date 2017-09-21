@@ -1,1 +1,6 @@
-console.log("loading");
+
+$(() => {
+  $('#show').click(function(){
+    $('#caro').toggle();
+  });
+});
