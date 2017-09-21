@@ -45,11 +45,16 @@ h5 {
   margin-top: 50px;
   text-align: center;
   color: ghostwhite;
-  font-size: 29px;
+  font-size: 50px;
   text-decoration: none;
+
 }
 
 a:link {
   color: ghostwhite;
   text-decoration: none;
+}
+
+.link h5 {
+  text-align: center;
 }
