@@ -3,42 +3,38 @@ body {
   background: #000;
   font-family: 'Josefin Sans', sans-serif;
   color: ghostwhite;
-
 }
 /*video {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
- /*background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;*/
-  /*background-size: cover;
-  transition: 1s opacity;*/
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+transform: translateX(-50%) translateY(-50%);
+/*background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;*/
+/*background-size: cover;
+transition: 1s opacity;*/
 /*}*/
 /*.stopfade {
-   opacity: .5;*/
-/*}*/*/
+opacity: .5;*/
+/*}*/
 
 h1 {
   color: ghostwhite;
   text-align: center;
-  font-size: 250px;
+  font-size: 100px;
 }
-
 h5 {
   margin: 30px;
-  display: inline;
-  font-size: 50px;
-
+  font-size: 38px;
 }
 
 .link {
   text-align: center;
-  /*display: inline;*/
+  display: inline;
 }
 
 .icon-links a {
@@ -55,12 +51,47 @@ h5 {
 .link a {
   color: ghostwhite;
   text-decoration: none;
-}
-
-.link h5 {
-  text-align: center;
+  /*text-align: center;*/
+  display: inline;
 }
 
 a:hover {
   color: aquamarine;
+  cursor: pointer;
+}
+
+a:checked {
+  color: papayawhip;
+}
+
+.show-content{
+  display: none;
+}
+
+.holding-frame {
+  min-height: 450px;
+  margin: 0 auto;
+  width: 85%;
+  border: 6px solid;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0%   {border-color: aquamarine;}
+  25%  {border-color: pink;}
+  50%  {border-color: mediumaquamarine;}
+  100% {border-color: papayawhip;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   {border-color: aquamarine;}
+  25%  {border-color: pink;}
+  50%  {border-color: mediumaquamarine;}
+  100% {border-color: papayawhip;}
 }
