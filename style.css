@@ -66,9 +66,11 @@ a:checked {
 
 .show-content{
   display: none;
+  text-align: center;
 }
 
 .holding-frame {
+  text-align: center;
   min-height: 450px;
   margin: 0 auto;
   width: 85%;
@@ -88,10 +90,79 @@ a:checked {
   100% {border-color: papayawhip;}
 }
 
+.header-ani {
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 10s; /* Safari 4.0 - 8.0 */
+  animation-name: kali;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
 /* Standard syntax */
-@keyframes example {
-  0%   {border-color: aquamarine;}
-  25%  {border-color: pink;}
-  50%  {border-color: mediumaquamarine;}
-  100% {border-color: papayawhip;}
+@keyframes kali {
+  0%   {color: aquamarine;}
+  25%  {color: pink;}
+  50%  {color: mediumaquamarine;}
+  100% {color: papayawhip;}
+}
+
+@keyframes kali {
+  0%   {color: aquamarine;}
+  25%  {color: pink;}
+  50%  {color: mediumaquamarine;}
+  100% {color: papayawhip;}
+}
+
+.about-content {
+  width: 80%;
+  font-size: 18px;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0;
+}
+
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
