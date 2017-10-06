@@ -14,16 +14,18 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" charset="utf-8"></script> -->
   <script src="app.js" charset="utf-8"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" charset="utf-8"></script>
+  <script src="zoom.js" charset="utf-8"></script>
 </head>
 
 <body>
-  <div class="container align-items-start">
+  <div id="divWrap" style="visibility: hidden">
+  <div id="body" class="container align-items-start">
     <div class="row">
       <div class="col">
-        <div class="header-ani">
-          <h1>Frederick Duffield</h1>
+        <div >
+          <h1 class="header-ani">Frederick Duffield</h1>
         </div>
       </div>
     </div>
@@ -51,40 +53,46 @@
       <div class="holding-frame">
         <!-- OVERLAY EFFECT -->
         <!-- <div id="effect-1" class="effects clearfix">
-          <div class="row">
-            <div class="col">
-              <div class="img">
-                <img class="d-block w-100" src="images/Eden.png" alt="Eden's Cottage">
-                <div class="overlay">
-                  <a href="https://fathomless-mountain-71589.herokuapp.com/" class="expand">Eden's Cottage</a>
-                  <p>HTML | jQuery | CSS3 </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!--WORk SECTION SCROLL -->
-        <div class="work-cont">
-        <div class="work-item">
-        <a href=" https://fathomless-mountain-71589.herokuapp.com/">
+        <div class="row">
+        <div class="col">
+        <div class="img">
         <img class="d-block w-100" src="images/Eden.png" alt="Eden's Cottage">
-      </a>
+        <div class="overlay">
+        <a href="https://fathomless-mountain-71589.herokuapp.com/" class="expand">Eden's Cottage</a>
+        <p>HTML | jQuery | CSS3 </p>
+      </div>
     </div>
-    <div class="work-item">
+  </div>
+</div>
+</div> -->
+
+<!--WORk SECTION SCROLL -->
+<div class="work-cont">
+  <div class="work-item">
+    <a href=" https://fathomless-mountain-71589.herokuapp.com/">
+      <img class="d-block w-100" src="images/Eden.png" alt="Eden's Cottage">
+    </a>
+  </div>
+  <br>
+  <h1>*</h1>
+  <div class="work-item">
     <a href="https://young-everglades-35053.herokuapp.com/">
-    <img class="d-block w-100" src="images/places.png" alt="Places and Spaces">
-  </a>
-</div>
-<div class="work-item">
-<a href="https://frozen-savannah-91722.herokuapp.com/">
-<img class="d-block w-100" src="images/have.png" alt="Have a do">
-</a>
-</div>
-<div class="work-item">
-<a href="https://dwelldnfacade.herokuapp.com/"></a>
-<img class="d-block w-100" src="images/Dwell.png" alt="Dwell">
-</div>
+      <img class="d-block w-100" src="images/places.png" alt="Places and Spaces">
+    </a>
+  </div>
+  <br>
+  <h1>*</h1>
+  <div class="work-item">
+    <a href="https://frozen-savannah-91722.herokuapp.com/">
+      <img class="d-block w-100" src="images/have.png" alt="Have a do">
+    </a>
+  </div>
+  <br>
+  <h1>*</h1>
+  <div class="work-item">
+    <a href="https://dwelldnfacade.herokuapp.com/"></a>
+    <img class="d-block w-100" src="images/Dwell.png" alt="Dwell">
+  </div>
 </div>
 <!-- ABOUT CONTENT-->
 <div id="about-content" class="about-content show-content">
@@ -102,27 +110,20 @@
 
 <!-- CONTACT CONTENT -->
 <div id="contact-content" class="contact-content show-content" >
-  <div class="text-anim">
-    <h5>
-      <span>H</span>
-      <span>i</span>
-      <span>t</span>
-      <span></span>
-      <span>m</span>
-      <span>e</span>
-      <span></span>
-      <span>u</span>
-      <span>p</span>
-    </h5>
-  </div>
-  <p class="link" ><a  href="mailto:fwhduffield@gmail.com">fwhduffield@gmail.com</a></p>
-</div>
-</div>
-</div>
-
-
-
-<!-- social media -->
+  <!-- <div class="text-anim">
+  <h5>
+  <span>H</span>
+  <span>i</span>
+  <span>t</span>
+  <span></span>
+  <span>m</span>
+  <span>e</span>
+  <span></span>
+  <span>u</span>
+  <span>p</span>
+</h5>
+</div> -->
+<p class="link"><a  href="mailto:fwhduffield@gmail.com">fwhduffield@gmail.com</a></p>
 <div class="row align-items-end">
   <div class="col icon-links link">
     <a href="https://twitter.com/FoxxxFoxxx"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
@@ -132,7 +133,9 @@
   </div>
 </div>
 </div>
-
-
+</div>
+</div>
+</div>
+</div>
 </body>
 </html>
