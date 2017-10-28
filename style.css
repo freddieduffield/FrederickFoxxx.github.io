@@ -192,6 +192,11 @@ img {
   margin: 0 auto;
   width: 80%;
   margin-top: 20px;
+  line-height: 200%;
+}
+
+.about-content p {
+
 }
 
 .contact-content p {
