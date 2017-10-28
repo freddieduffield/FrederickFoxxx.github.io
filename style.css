@@ -195,13 +195,13 @@ img {
   line-height: 200%;
 }
 
-.about-content p {
-
-}
-
 .contact-content p {
  font-size: 2rem;
  margin-top: 1rem;
+}
+
+.icon-links a:hover {
+  color: #CBC5EA;
 }
 
 .icon-links a {
@@ -211,8 +211,19 @@ img {
   font-size: 2rem;
   text-decoration: none;
 }
+
+
 .icon-links i {
   margin: 30px;
+}
+
+@media (max-width: 410px) {
+  .icon-links a {
+    display: inline-block;
+    padding: 0.5em 0.5em;
+    font-size: 3rem;
+    cursor: pointer;
+  }
 }
 
 .header-ani {
